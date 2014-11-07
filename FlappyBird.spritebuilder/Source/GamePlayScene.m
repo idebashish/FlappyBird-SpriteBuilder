@@ -8,6 +8,8 @@
 {
     character = (Character*)[CCBReader load:@"Character"];
     [physicsnode addChild:character];
+    [character flap];
+
 }
 
 -(void)update:(CCTime)delta
@@ -19,7 +21,6 @@
 
 -(void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
 
-    [character flap];
 
 }
 
